@@ -37,6 +37,7 @@ const config = {
   use: {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     actionTimeout: 0,
+    baseURL: 'https://app.rc.careerist.com',
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://localhost:3000',
 
@@ -50,8 +51,6 @@ const config = {
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
-        // baseURL: 'https://playwright.dev/docs/test-fixtures',
-        baseURL: 'https://app.rc.careerist.com',
         headless: false
       },
     },
@@ -60,8 +59,6 @@ const config = {
       name: 'firefox',
       use: {
         ...devices['Desktop Firefox'],
-        // baseURL: 'https://playwright.dev/docs/test-fixtures',
-        baseURL: 'https://app.rc.careerist.com',
         headless: false
       },
     },
@@ -70,8 +67,6 @@ const config = {
       name: 'webkit',
       use: {
         ...devices['Desktop Safari'],
-        // baseURL: 'https://playwright.dev/docs/test-fixtures',
-        baseURL: 'https://app.rc.careerist.com',
         headless: false
       },
     },

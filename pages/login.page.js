@@ -14,9 +14,10 @@ module.exports  = class LoginPage{
     }
 
     async signIn(){
-        await this.page.mouse.move(200,200);
-        await this.page.mouse.down();
+        await this.page.locator('[class="MuiBackdrop-root"]').click()
         await this.page.locator(this.signInBtn).click();
+        // await this.page.mouse.down();
+        // await this.page.mouse.move(0,900);
     }
 }
 

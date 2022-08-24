@@ -3,19 +3,12 @@ const {expect} = require("@playwright/test");
 module.exports = class Assertions{
     constructor(page) {
         this.page = page;
-        this.url = page.url();
-        // this.heading = '.MuiTypography-root-205.MuiTypography-h2-211:has-text("Sign up")';
         this.emailErrMess = '.MuiFormHelperText-root-361:has-text("Please enter correct email")';
         this.passwordErrMess = '.MuiFormHelperText-root-361:has-text("Your password must be at least 8 characters")';
         this.confirmPassErrMess = '.MuiFormHelperText-root-361:has-text("Please make sure your passwords match")';
     }
 
-    async pageIsOpened(arg){
-        await expect(this.url).toContain(arg)
-    }
-
     async hasHeading(arg){
-        // await expect(this.heading).toContain(arg);
         await expect(this.page).toHaveTitle(arg);
     }
 
