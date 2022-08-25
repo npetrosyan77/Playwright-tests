@@ -67,7 +67,7 @@ const config = {
       name: 'webkit',
       use: {
         ...devices['Desktop Safari'],
-        headless: false
+        headless: true
       },
     },
 
