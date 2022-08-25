@@ -21,7 +21,7 @@ const config = {
      * Maximum time expect() should wait for the condition to be met.
      * For example in `await expect(locator).toHaveText();`
      */
-    timeout: 20000
+    timeout: 100000
   },
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -37,7 +37,7 @@ const config = {
   use: {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     actionTimeout: 0,
-    baseURL: 'https://app.rc.careerist.com',
+    baseURL: 'https://app.rc.careerist.com/',
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://localhost:3000',
 
@@ -67,7 +67,7 @@ const config = {
       name: 'webkit',
       use: {
         ...devices['Desktop Safari'],
-        headless: true
+        headless: false
       },
     },
 
