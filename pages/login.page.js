@@ -5,8 +5,8 @@ module.exports  = class LoginPage{
         this.signInBtn = '[href="/auth/register"]'
     }
 
-    async visit(){
-        await this.page.goto("/")
+    async visit(arg){
+        await this.page.goto(arg)
     }
 
     async login() {

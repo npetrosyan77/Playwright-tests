@@ -37,7 +37,6 @@ const config = {
   use: {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     actionTimeout: 0,
-    baseURL: 'https://app.rc.careerist.com/',
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://localhost:3000',
 
@@ -62,22 +61,23 @@ const config = {
         headless: true
       },
     },
+    //
+    // {
+    //   name: 'webkit',
+    //   use: {
+    //     ...devices['Desktop Safari'],
+    //     headless: false
+    //   },
+    // },
 
+    /* Test against mobile viewports. */
     {
-      name: 'webkit',
+      name: 'Mobile Chrome',
       use: {
-        ...devices['Desktop Safari'],
+        ...devices['iPhone 12'],
         headless: true
       },
     },
-
-    /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: {
-    //     ...devices['Pixel 5'],
-    //   },
-    // },
     // {
     //   name: 'Mobile Safari',
     //   use: {
