@@ -50,7 +50,7 @@ const config = {
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
-        headless: true
+        headless: false
       },
     },
 
@@ -58,10 +58,10 @@ const config = {
       name: 'firefox',
       use: {
         ...devices['Desktop Firefox'],
-        headless: true
+        headless: false
       },
     },
-    //
+
     // {
     //   name: 'webkit',
     //   use: {
@@ -71,13 +71,13 @@ const config = {
     // },
 
     /* Test against mobile viewports. */
-    {
-      name: 'Mobile Chrome',
-      use: {
-        ...devices['iPhone 12'],
-        headless: true
-      },
-    },
+    // {
+    //   name: 'Mobile Chrome',
+    //   use: {
+    //     ...devices['iPhone 12'],
+    //     headless: true
+    //   },
+    // },
     // {
     //   name: 'Mobile Safari',
     //   use: {
