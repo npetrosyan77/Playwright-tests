@@ -1,12 +1,12 @@
 export function findLocale (arg, rangeUp, rangeTo) {
-    let check = false;
+    let changed = false;
     for (let l of arg) {
         if (l.charCodeAt() >= rangeUp && l.charCodeAt() <= rangeTo) {
-            check = true
+            changed = true
         }
-        if(!check){
-            throw new Error('not');
+        if(!changed){
+            throw new Error('Locale is not changed.');
         }
     }
-    console.log('Locale is changed')
+    console.log('Locale is changed.')
 }
