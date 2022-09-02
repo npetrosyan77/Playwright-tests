@@ -1,3 +1,4 @@
+/*
 const LoginPage = require('../../pages/login.page');
 const {test, expect} = require('@playwright/test');
 
@@ -25,3 +26,4 @@ test.describe('Emulating mobile devices', () => {
         await page.pause()
    })
 })
+*/

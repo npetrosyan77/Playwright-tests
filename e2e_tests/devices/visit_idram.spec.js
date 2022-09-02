@@ -1,3 +1,4 @@
+/*
 import browserEnv from 'browser-env';
 browserEnv(['navigator']);
 
@@ -21,5 +22,7 @@ test.describe('Emulating mobile devices', () => {
         await page.screenshot({path: 'idram.png'})
     })
 })
+*/
+
 
 

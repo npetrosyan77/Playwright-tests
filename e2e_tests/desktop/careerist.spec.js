@@ -1,3 +1,4 @@
+/*
 const LoginPage = require('../../pages/login.page');
 const SignInPage = require('../../pages/signIn.page');
 const Assertions = require('../../pages/assertions');
@@ -36,3 +37,4 @@ test.describe('Checking student adding flow', () => {
         await page.screenshot({path: 'screenshots/student1.png'})
     })
 })
+*/
