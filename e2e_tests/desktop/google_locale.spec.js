@@ -12,14 +12,12 @@ test.describe('Working with locales', () => {
 
         await login.visit('https://www.google.com/')
         const country = await page.locator('.FPdoLc.lJ9FBc .RNmpXc').getAttribute('value')
-        console.log(country)
         await findLocale(country, 1040, 1103)
     })
 
 
     test("Check that new error is thrown when Google isn't opened in configured locale language", async ({page}) => {
         const login = new LoginPage(page);
-        // const language = await page.$$('[lang*="ru"]')
 
         await login.visit('https://www.google.com/')
         const lang = await page.locator('html[lang]').getAttribute('lang')
