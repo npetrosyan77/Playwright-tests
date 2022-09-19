@@ -1,4 +1,3 @@
-/*
 const LoginPage = require('../../pages/login.page');
 const {test, expect} = require('@playwright/test');
 
@@ -8,22 +7,22 @@ test.describe('Emulating mobile devices', () => {
         deviceScaleFactor: 3,
         hasTouch: true,
         geolocation: {
-            latitude: 56.2919384,
-            longitude: 43.786086
+            latitude: 51.5007292,
+            longitude: -0.1246254
         },
         permissions: ['geolocation'],
-        locale: 'ru-RU'
     });
 
 
     test('Check navigation to the page via iPhone12', async ({page}) => {
         const login = new LoginPage(page);
 
+
         await login.visit('https://www.google.com/maps')
-        await page.locator('.sVuEFc #sVuEFc').click()
         await page.waitForLoadState('load')
-        await page.locator('.sVuEFc #sVuEFc').click()
-        await page.pause()
+        await page.locator('.sVuEFc #sVuEFc').click({force: true})
+        await page.waitForLoadState('load')
+        // await expect(page).toHaveURL('https://www.google.com/maps/@51.5007273,-0.1246387,16z')
    })
 })
-*/
+
